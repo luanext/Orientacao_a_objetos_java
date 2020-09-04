@@ -1,0 +1,23 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		Paciente pac = new Paciente();
+		pac.peso = 161;
+		pac.altura = 1.89;
+		
+		Paciente pac2 = new Paciente();
+		pac2.peso = 63;
+		pac2.altura = 1.69;
+		
+		Paciente pac3 = new Paciente();
+		pac3.peso = 4.3;
+		pac3.altura = 0.50;
+
+		System.out.println("O IMC do Paciente 1 é: " + pac.CalcularIMC(0, 0) + "kg/m². \nO Paciente está com: " + pac.diagnostico() + "\n");
+		System.out.println("O IMC do Paciente 2 é: " + pac2.CalcularIMC(0, 0) + "kg/m². \nO Paciente está com: " + pac2.diagnostico() + "\n");
+		System.out.println("O IMC do Paciente 3 é: " + pac3.CalcularIMC(0, 0) + "kg/m². \nO Paciente está com: " + pac3.diagnostico() + "\n");
+	}
+
+}
